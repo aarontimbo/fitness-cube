@@ -13,8 +13,6 @@ grails.project.dependency.resolution = {
         grailsPlugins()
         grailsHome()
         grailsCentral()
-		grailsRepo "http://atimbo.com:8080/svn/grails-plugins"
-		grailsRepo "http://roma.atimbo.com:8080/svn/grails-plugins"
 		
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
@@ -30,4 +28,12 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.5'
     }
+	
+	plugins {
+		compile ":nutrient-data:0.3.1"
+		compile ":codenarc:0.17"
+		runtime ":jquery:1.7.1"
+		test ":spock:0.6"
+		
+	}
 }
